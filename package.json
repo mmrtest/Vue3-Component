@@ -1,0 +1,29 @@
+{
+  "name": "dv-button",
+  "version": "0.0.2",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/dv-button.umd.js",
+  "module": "./dist/dv-button.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/dv-button.es.js",
+      "require": "./dist/dv-button.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.0",
+    "vite": "^3.1.0"
+  }
+}
